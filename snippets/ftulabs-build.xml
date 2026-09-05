@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="build/make" name="LineageOS/android_build" remote="github" revision="refs/heads/lineage-24.0" groups="pdk,sysui-studio">
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="LineageOS/android_build_soong" remote="github" revision="refs/heads/lineage-24.0" groups="pdk,tradefed,sysui-studio">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="device/lineage/atv" name="LineageOS/android_device_lineage_atv" remote="github"  revision="refs/heads/lineage-24.0" />
+  <project path="device/lineage/car" name="LineageOS/android_device_lineage_car" remote="github"  revision="refs/heads/lineage-24.0" />
+  <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" remote="github"  revision="refs/heads/lineage-24.0" />
+  <project path="hardware/lineage/compat" name="LineageOS/android_hardware_lineage_compat" remote="github"  revision="refs/heads/lineage-24.0" />
+  <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" remote="github"  revision="refs/heads/lineage-24.0" />
+  <project path="lineage-sdk" name="LineageOS/android_lineage-sdk" remote="github"  revision="refs/heads/lineage-24.0" />
+  <project path="packages/overlays/Lineage" name="LineageOS/android_packages_overlays_Lineage" remote="github"  revision="refs/heads/lineage-24.0" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github"  revision="refs/heads/lineage-24.0" />
+  <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" clone-depth="1" remote="github"  revision="refs/heads/lineage-24.0" />
+  <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="github"  revision="refs/heads/lineage-24.0" />
+  <project path="vendor/apn" name="LineageOS/android_vendor_apn" revision="main" remote="github" />
+  <project path="vendor/lineage" name="LineageOS/android_vendor_lineage" remote="github"  revision="refs/heads/lineage-24.0" />
+
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
+  <project path="prebuilts/clang/kernel/linux-x86/clang-r416183b" name="LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b" clone-depth="1" revision="lineage-20.0" remote="github" />
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="main-kernel-2025" />
+  <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1" remote="github"  revision="refs/heads/lineage-24.0" />
+
+  <project path="lineage/scripts" name="LineageOS/scripts" groups="tools" revision="main" remote="github" />
+</manifest>

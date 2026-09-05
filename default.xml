@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
+  <!-- ftulabs -->
+  <remote  name="github"
+           fetch="https://github.com"
+           review="review.lineageos.org" />
   <default revision="refs/tags/android-17.0.0_r1"
            remote="aosp"
            sync-j="4" />
@@ -1116,4 +1120,9 @@
   </project>
   <!-- END open-source projects -->
 
+  <!-- ftulabs -->
+  <include name="snippets/ftulabs-remove-projects.xml" />
+  <include name="snippets/ftulabs-build.xml" />
+  <include name="snippets/ftulabs-hardware.xml" />
+  <include name="snippets/ftulabs-kernel-6.18.xml" />
 </manifest>
